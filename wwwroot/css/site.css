@@ -1,0 +1,118 @@
+﻿/* Stylish Theme Colors for Navigation, Cards, and Buttons */
+
+/* Navigation Bar Styling */
+.navbar {
+  background: linear-gradient(90deg, #3b82f6, #9333ea) !important; /* Blue-Purple gradient */
+  padding: 10px 15px;
+}
+
+.navbar a.nav-link {
+  color: #2ea7a7 !important;
+  font-weight: 600;
+}
+
+.navbar a.nav-link:hover {
+  color: #facc15 !important;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #10b981, #3b82f6) !important;
+  color: rgb(48, 131, 170) !important;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-weight: bold;
+}
+
+.card-title {
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.card-body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.card-footer {
+  background-color: #f1f5f9;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Button Customizations */
+.btn-outline-primary {
+  border: 2px solid #3b82f6 !important;
+  color: #3b82f6 !important;
+  padding: 10px 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #3b82f6 !important;
+  color: white !important;
+}
+
+.btn-outline-success {
+  border: 2px solid #10b981 !important;
+  color: #10b981 !important;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.btn-outline-success:hover {
+  background-color: #10b981 !important;
+  color: white !important;
+}
+
+/* Badge Styling */
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5em 0.8em;
+  border-radius: 1em;
+}
+
+.badge-success {
+  background-color: #10b981 !important;
+  color: white !important;
+}
+
+.badge-danger {
+  background-color: #ef4444 !important;
+  color: white !important;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1f2937;
+  color: #d1d5db;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+}
+footer a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #facc15;
+}
+
+/* Add Animation on Buttons */
+.btn-outline-primary, .btn-outline-success {
+  transition: transform 0.2s;
+}
+
+.btn-outline-primary:hover, .btn-outline-success:hover {
+  transform: translateY(-3px);
+}
