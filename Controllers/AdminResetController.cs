@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using eTickets.Data;
 using eTickets.Models;
 using System.Threading.Tasks;
 using System.Linq;
@@ -16,13 +15,18 @@ namespace eTickets.Controllers
             _userManager = userManager;
         }
 
-        [HttpGet("ResetAdminPassword")]
-        public async Task<IActionResult> ResetAdminPassword()
+        [HttpGet("AdminReset/ResetPassword")]
+        public IActionResult ResetPassword()
+        {
+            return View();
+        }
+
+        [HttpPost("AdminReset/ResetPassword")]
+        public async Task<IActionResult> ResetPassword(string newPassword)
         {
             var adminUser = await _userManager.FindByEmailAsync("admin@etickets.com");
             if (adminUser != null)
             {
-                var newPassword = "NewSecurePassword123!";
                 var token = await _userManager.GeneratePasswordResetTokenAsync(adminUser);
                 var result = await _userManager.ResetPasswordAsync(adminUser, token, newPassword);
 
